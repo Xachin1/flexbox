@@ -1,0 +1,49 @@
+body {
+  background-color: bisque;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 32px;
+}
+
+.parent {
+  /* flex */
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  background-color: burlywood;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+  padding: 1rem;
+  gap: 2px;
+}
+.parent div {
+  background-color: rgb(102, 71, 26);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent > div:nth-child(odd) {
+  background: red;
+}
+.item-4 {
+  align-self: flex-start;
+}
+.item-8 {
+  order: -1;
+}
+.item-9 {
+  order: -2;
+  align-self: flex-end;
+}
+.item-1 {
+  align-self: flex-start;
+  /* flex-grow: 1; */
+}
+.item-2,
+.item-3 {
+  flex-grow: 1;
+}
